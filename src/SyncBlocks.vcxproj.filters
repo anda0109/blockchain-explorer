@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="SyncBlocks">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{8a835142-ab02-4e31-9037-08a5d29a2e81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsoncpp">
+      <UniqueIdentifier>{76e49392-7236-4c22-b8df-060cf4d79b9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsonrpc-cpp">
+      <UniqueIdentifier>{15159f8f-65e0-412d-a4c9-592f37b5e3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oracle-api">
+      <UniqueIdentifier>{44a3f15e-3623-4cc4-a387-b14b36541d10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db_access">
+      <UniqueIdentifier>{6c3aba9d-3cdf-4689-b15e-a5d71e521771}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="common\os_libc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\os_type.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp\json_reader.cpp">
+      <Filter>jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp\json_value.cpp">
+      <Filter>jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsoncpp\json_writer.cpp">
+      <Filter>jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\jsonrpc_client.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\jsonrpc_handler.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\jsonrpc_httpclient.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\jsonrpc_server.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\jsonrpc_tcpclient.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\jsonrpc_tcpserver.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\jsonrpc_udpclient.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\jsonrpc_udpserver.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\netstring.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\networking.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\restful_httpclient.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="jsonrpc-cpp\system.cpp">
+      <Filter>jsonrpc-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="oracle_api\db_oracle.cpp">
+      <Filter>oracle-api</Filter>
+    </ClCompile>
+    <ClCompile Include="oracle_api\lib_oracle.cpp">
+      <Filter>oracle-api</Filter>
+    </ClCompile>
+    <ClCompile Include="DaemonData.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="EthData.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="common\os_dir.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\os_file.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\os_time.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ut_strconvert.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="db_access\db_access.cpp">
+      <Filter>db_access</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncEthBlocks.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="common\os_log.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\os_ipc.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\os_errno.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="httpclient.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="common\uint128_t.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\uint256_t.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncEosBlocks.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="DaemonHttpData.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="EosData.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ut_stl.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="http_server_api.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncBtcBlocks.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+    <ClCompile Include="BtcData.cpp">
+      <Filter>SyncBlocks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jsoncpp\json_batchallocator.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="oracle_api\lib_oracle.h">
+      <Filter>oracle-api</Filter>
+    </ClInclude>
+    <ClInclude Include="DaemonData.h">
+      <Filter>SyncBlocks</Filter>
+    </ClInclude>
+    <ClInclude Include="EthData.h">
+      <Filter>SyncBlocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\db_access\db_access.h">
+      <Filter>db_access</Filter>
+    </ClInclude>
+    <ClInclude Include="httpclient.h">
+      <Filter>SyncBlocks</Filter>
+    </ClInclude>
+    <ClInclude Include="DaemonHttpData.h">
+      <Filter>SyncBlocks</Filter>
+    </ClInclude>
+    <ClInclude Include="EosData.h">
+      <Filter>SyncBlocks</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncBlocks.h">
+      <Filter>SyncBlocks</Filter>
+    </ClInclude>
+    <ClInclude Include="BtcData.h">
+      <Filter>SyncBlocks</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>SyncBlocks</Filter>
+    </ClInclude>
+    <ClInclude Include="http_server_api.h">
+      <Filter>SyncBlocks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jsoncpp\json_internalarray.inl">
+      <Filter>jsoncpp</Filter>
+    </None>
+    <None Include="jsoncpp\json_internalmap.inl">
+      <Filter>jsoncpp</Filter>
+    </None>
+    <None Include="jsoncpp\json_valueiterator.inl">
+      <Filter>jsoncpp</Filter>
+    </None>
+    <None Include="jsoncpp\sconscript">
+      <Filter>jsoncpp</Filter>
+    </None>
+  </ItemGroup>
+</Project>
