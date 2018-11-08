@@ -38,7 +38,9 @@ public:
 	int doproc(const char *_csSql, int _iSqlLen);
 	int querypage(int row_begin, int row_num, const char* _sql_str);
     int fetch_row();
+	int fetch_field();
     const char* get_field(int index);
+	const char* get_field_name(int index);
 	
 	int reconnect();
 	int commit();
@@ -54,6 +56,7 @@ private:
     MYSQL* mysql;
     MYSQL_RES* result;
     MYSQL_ROW  row;
+	MYSQL_FIELD * field;
 	int mi_col_num;
     int mi_affected_row_num;
 };

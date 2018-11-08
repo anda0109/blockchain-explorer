@@ -1,4 +1,4 @@
-//#include "db_api/db_api.h"
+#include "db_api/db_api.h"
 #include "lib_mysql.h"
 #include "common/os_libc.h"
 //#include "plat/os_log.h"
@@ -115,10 +115,15 @@ int _db_get_affected_rowcount(void *_hDb)
 int _db_fetch_row(void *_hDb)
 {
     MysqlClient* _hmysql = (MysqlClient*)_hDb;
-	
+	_hmysql->fetch_field();
     return _hmysql->fetch_row();
 }
 
+const char *_db_get_field_name(void *_hDb, int _col)
+{
+	MysqlClient* _hmysql = (MysqlClient*)_hDb;
+	return  _hmysql->get_field_name(_col);//
+}
 
 const char *_db_get_field(void *_hDb, int _col)
 {

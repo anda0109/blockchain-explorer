@@ -325,6 +325,25 @@ int MysqlClient::fetch_row()
     return 0;
 }
 
+int MysqlClient::fetch_field()
+{
+	if (result == NULL)
+	{
+		return -1;
+	}
+	//row = mysql_fetch_row(result);
+	field = mysql_fetch_field(result);
+	if (field == NULL)
+		return -1;
+	return 0;
+}
+
+const char* MysqlClient::get_field_name(int index)
+{
+	const char *str = field[index].name;
+	return str;//row[index];    
+}
+
 const char* MysqlClient::get_field(int index)
 {
 	//os_assert(index>=0);
